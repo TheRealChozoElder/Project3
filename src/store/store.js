@@ -1,12 +1,12 @@
-//ToDo: Import vue and name it Vue
-//ToDo: Import vuex and name it Vuex
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-import stocks from './modules/stocks';
-import portfolio from './modules/portfolio';
+import Stocks from './modules/stocks.js';
+import Portfolio from './modules/portfolio.js';
 
-import * as actions from './actions';
+import * as actions from './actions.js';
 
-//ToDo Initialize Vuex using Vue.use()
+Vue.use(Vuex);
 
 export default new Vuex.Store({
     actions,
